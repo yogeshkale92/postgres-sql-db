@@ -17,7 +17,7 @@ public class CreatedbawsApplication {
 
         Connection c = DriverManager.getConnection("jdbc:postgresql://database-1.cmeqgqyduags.us-west-2.rds.amazonaws.com:5432/postgres", "postgres22", "nepr12345");
         Statement statement = c.createStatement();
-        statement.executeUpdate("INSERT INTO public.app_user(	name, password, role)	VALUES ('admin','password', 'admin')");
+        statement.executeUpdate("INSERT INTO app_user(	name, password, role)	VALUES ('admin','password', 'admin')");
     }
 
 }
