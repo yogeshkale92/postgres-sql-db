@@ -15,7 +15,7 @@ public class CreatedbawsApplication {
 
         SpringApplication.run(CreatedbawsApplication.class, args);
 
-        Connection c = DriverManager.getConnection("jdbc:postgresql://database-1.cmeqgqyduags.us-west-2.rds.amazonaws.com:5432/", "postgres22", "nepr12345");
+        Connection c = DriverManager.getConnection("jdbc:postgresql://database-1.cmeqgqyduags.us-west-2.rds.amazonaws.com:5432/postgres", "postgres22", "nepr12345");
         Statement statement = c.createStatement();
         statement.executeUpdate("CREATE DATABASE sales");
     }
